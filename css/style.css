@@ -11,6 +11,11 @@ body{
 img{
     display: block;
 }
+.container{
+    width: 1158px;
+    margin: 0 auto;
+}
+
 .home-navbar{
     background-color: #FFFFFF;
     display: flex;
@@ -35,17 +40,16 @@ img{
 }
 .header-div{
     display: flex;
-    width: 1158px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 15px;
 }
 .header-menu{
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 .header-menu .list{
     margin-right: 40px;
-    padding: 24px 0;
 }
 .header-menu .list:last-child{
     margin-right: 0;
