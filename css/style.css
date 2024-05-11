@@ -5,7 +5,7 @@ body{
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 
 img{
@@ -46,7 +46,6 @@ img{
 .header-menu{
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 .header-menu .list{
     margin-right: 40px;
@@ -61,6 +60,7 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding: 24px 0;
 }
 .header-menu .list .etiket:hover,
 .header-menu .list .etiket:focus{
@@ -126,7 +126,6 @@ img{
 .hero{
     background-color: #2E2F42;
     padding: 188px 0;
-
 }
 .hero-header{
     font-size: 56px;
@@ -143,23 +142,46 @@ img{
 }
 
 .visually-hidden {
-    display: none;
+    visibility: hidden;
 }
 
 .section-ul{
     display: flex;
     gap: 24px;
 }
-.section-ul .list{
-    margin-right: 24px;
-    width: calc((100% - 72px) / 4);
+.four{
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
+.last{
+    margin-bottom: 48px;
+    width: calc((100% - 48px) / 3);
+}
+
+.last:nth-child(3n){
+    margin-right: 0;
+    margin-bottom: 0;
+}
 .section-ul .list:last-child{
     margin-right: 0;
 }
 .section-ul .list{
     background-color: #FFFFFF;
+    margin-right: 24px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card{
+    padding: 32px 0;
+}
+
+.card-wrap{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .section-ul .list .subtitle{
@@ -169,19 +191,23 @@ img{
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: center;
 }
 .section-ul .list .text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 .section-4{
     background-color: #ffffff;
+    padding: 120px 0;
 }
 .footer{
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 .footer .logo{
     font-family: "Raleway", sans-serif;
@@ -195,10 +221,13 @@ img{
 
 .footer .logo .span{
     color: #F4F4FD;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer .text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    max-width: 264px;
 }
