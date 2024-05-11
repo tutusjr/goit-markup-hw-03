@@ -142,7 +142,16 @@ img{
 }
 
 .visually-hidden {
-    visibility: hidden;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 
 .section-ul{
@@ -157,7 +166,6 @@ img{
 
 .last{
     margin-bottom: 48px;
-    width: calc((100% - 48px) / 3);
 }
 
 .last:nth-child(3n){
@@ -170,7 +178,6 @@ img{
 .section-ul .list{
     background-color: #FFFFFF;
     margin-right: 24px;
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -217,12 +224,13 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    display: block;
+    margin-bottom: 16px;
 }
 
 .footer .logo .span{
     color: #F4F4FD;
     display: inline-block;
-    margin-bottom: 16px;
 }
 .footer .text{
     font-size: 16px;
