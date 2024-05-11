@@ -7,9 +7,14 @@ body{
     line-height: 24px;
     letter-spacing: 2%;
 }
+
+img{
+    display: block;
+}
 .home-navbar{
     background-color: #FFFFFF;
-    
+    display: flex;
+    align-items: center;
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -19,23 +24,55 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-right: 76px;
 }
 .span{
     color: #2E2F42;
 }
-.header-ul .list .etiket{
+
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-div{
+    display: flex;
+    width: 1158px;
+    margin: 0;
+    padding: 0 15px;
+}
+.header-menu{
+    display: flex;
+    gap: 40px;
+}
+.header-menu .list{
+    margin-right: 40px;
+    padding: 24px 0;
+}
+.header-menu .list:last-child{
+    margin-right: 0;
+}
+
+.header-menu .list .etiket{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-.header-ul .list .etiket:hover,
-.header-ul .list .etiket:focus{
+.header-menu .list .etiket:hover,
+.header-menu .list .etiket:focus{
     color: #404bbf;
 }
 .address{
     font-style: normal;
+}
+.address .address-link{
+    display: flex;
+}
+.address-link .list{
+    margin-right: 40px;
+}
+.address-link .list:last-child{
+    margin-right: 0;
 }
 .address-link .list .etiket{
     color: #434455;
@@ -55,6 +92,12 @@ body{
     background-color: #4D5AE5;
     color:#FFFFFF;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .button:hover,
 .button:focus{
@@ -64,6 +107,7 @@ body{
 
 .our-team{
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 .section-header{
     font-size: 36px;
@@ -72,10 +116,13 @@ body{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .hero{
     background-color: #2E2F42;
+    padding: 188px 0;
+
 }
 .hero-header{
     font-size: 56px;
@@ -83,12 +130,30 @@ body{
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    max-width: 496px;
 }
 
 .section2{
     background-color: #FFFFFF;
+    padding: 120px 0;
 }
 
+.visually-hidden {
+    display: none;
+}
+
+.section-ul{
+    display: flex;
+    gap: 24px;
+}
+.section-ul .list{
+    margin-right: 24px;
+    width: calc((100% - 72px) / 4);
+}
+
+.section-ul .list:last-child{
+    margin-right: 0;
+}
 .section-ul .list{
     background-color: #FFFFFF;
 }
@@ -99,6 +164,7 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .section-ul .list .text{
     font-size: 16px;
