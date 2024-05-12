@@ -198,8 +198,8 @@ ul {
 
 .section-ul .list.section3-list{
 width: calc((100% - 48px) / 4);
-
 }
+
 .four{
     flex-wrap: wrap;
     column-gap: 24px;
