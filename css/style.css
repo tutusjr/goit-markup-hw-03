@@ -177,7 +177,7 @@ ul {
     gap: 24px;
 }
 
-.section-ul .list.section3list{
+.section-ul .list.section3-list{
 width: calc((100% - 48px) / 4);
 
 }
