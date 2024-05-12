@@ -19,6 +19,10 @@ body{
 img{
     display: block;
 }
+
+.list{
+    list-style: none;
+}
 .container{
     width: 1158px;
     margin: 0 auto;
@@ -162,9 +166,16 @@ img{
         overflow: hidden;
 }
 
+
+
 .section-ul{
     display: flex;
     gap: 24px;
+}
+
+.section-ul .section3-list{
+width: calc((100% - 48px) / 4);
+
 }
 .four{
     flex-wrap: wrap;
@@ -172,8 +183,9 @@ img{
     row-gap: 48px;
 }
 
-.last{
+.four .last{
     margin-bottom: 48px;
+    width: calc((100% - 48px) / 3);
 }
 
 .last:nth-child(3n){
@@ -187,6 +199,9 @@ img{
     background-color: #FFFFFF;
     margin-right: 24px;
     border-radius: 0px 0px 4px 4px;
+}
+
+.section-ul .section2-list{
     width: calc((100% - 72px) / 4);
 }
 
