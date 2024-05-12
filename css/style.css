@@ -187,9 +187,9 @@ width: calc((100% - 48px) / 4);
     row-gap: 48px;
 }
 
-.four .last{
+.section-ul.four .list.last{
     margin-bottom: 48px;
-    width: calc((100% - 48px) / 3);
+    width:calc((100% - 48px) / 3);
 }
 
 .last:nth-child(3n){
